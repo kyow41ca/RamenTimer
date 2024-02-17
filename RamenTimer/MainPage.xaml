@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RamenTimer.MainPage">
+
+    <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+        <Entry x:Name="minutesEntry" Placeholder="Set minutes" Keyboard="Numeric"/>
+        <Button x:Name="startButton" Text="Start" Clicked="OnStartButtonClicked"/>
+        <Button x:Name="stopButton" Text="Stop" Clicked="OnStopButtonClicked"/>
+        <Button x:Name="resetButton" Text="Reset" Clicked="OnResetButtonClicked"/>
+        <Label x:Name="timerLabel" Text="00:00" FontSize="Large" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+
+</ContentPage>
